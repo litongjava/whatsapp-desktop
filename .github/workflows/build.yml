@@ -24,8 +24,8 @@ jobs:
     - name: Upload build artifact
       uses: actions/upload-artifact@v3
       with:
-        name: gmail-desktop-${{ runner.os }}-amd64
-        path: target/release/bundle/dmg/gmail-desktop_0.1.0_x64.dmg
+        name: whatsapp-desktop-${{ runner.os }}-amd64
+        path: target/release/bundle/dmg/whatsapp-desktop_0.1.0_x64.dmg
 
   build_macos_m2:
     runs-on: macos-latest
@@ -43,8 +43,8 @@ jobs:
     - name: Upload build artifact
       uses: actions/upload-artifact@v3
       with:
-        name: gmail-desktop-${{ runner.os }}-arm64
-        path: target/aarch64-apple-darwin/release/bundle/dmg/gmail-desktop_0.1.0_aarch64.dmg
+        name: whatsapp-desktop-${{ runner.os }}-arm64
+        path: target/aarch64-apple-darwin/release/bundle/dmg/whatsapp-desktop_0.1.0_aarch64.dmg
 
   build_ubuntu:
     runs-on: ubuntu-latest
@@ -69,14 +69,14 @@ jobs:
     - name: Upload build artifact
       uses: actions/upload-artifact@v3
       with:
-        name: gmail-desktop-${{ runner.os }}-amd64-deb
-        path: target/release/bundle/deb/gmail-desktop_0.1.0_amd64.deb
+        name: whatsapp-desktop-${{ runner.os }}-amd64-deb
+        path: target/release/bundle/deb/whatsapp-desktop_0.1.0_amd64.deb
 
     - name: Upload build artifact
       uses: actions/upload-artifact@v3
       with:
-        name: gmail-desktop-${{ runner.os }}-amd64-appimage
-        path: target/release/bundle/appimage/gmail-desktop_0.1.0_amd64.AppImage
+        name: whatsapp-desktop-${{ runner.os }}-amd64-appimage
+        path: target/release/bundle/appimage/whatsapp-desktop_0.1.0_amd64.AppImage
 
 
   build_windows:
@@ -95,5 +95,5 @@ jobs:
     - name: Upload build artifact
       uses: actions/upload-artifact@v3
       with:
-        name: gmail-desktop-${{ runner.os }}-amd64
-        path: target/release/bundle/msi/gmail-desktop_0.1.0_x64_en-US.msi
+        name: whatsapp-desktop-${{ runner.os }}-amd64
+        path: target/release/bundle/msi/whatsapp-desktop_0.1.0_x64_en-US.msi
